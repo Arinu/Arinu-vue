@@ -1,4 +1,4 @@
-# my-vue2
+# my-vue3
 
 > A Vue.js project
 
@@ -14,7 +14,5 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-
-**已有编译后版本,在``dist`目录下**
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
