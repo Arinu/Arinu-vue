@@ -35,6 +35,7 @@
           this.fragments.splice(leftNum,1,fragment)
           this.fragments.splice(index,1,'')
         }
+        //是否通关
         if(this.fragments[15]==='' && this.fragments[0]===1){
           var newarr = this.fragments.slice(0,15)
           var fi = newarr.every((item,index) => item === index+1)
@@ -71,5 +72,17 @@ li[class=li_num]{
 li[class~=blank]{
   background: #eee;
   box-shadow: inset 0px 0px 10px #000
+}
+@media (max-width:980px){
+  ul{
+    width: 800px;
+    height: 800px;
+  }
+  li{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 36px
+  }
 }
 </style>

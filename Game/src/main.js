@@ -3,6 +3,7 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Puzzle from './components/Puzzle'
 import Puzzle1 from './components/Puzzle1'
+import Lattice2048 from './components/Lattice2048'
 // var app = Vue.extend(App);
 
 Vue.use(VueRouter)
@@ -11,6 +12,7 @@ const routes = [
   // {path:'*',redirect: { name: 'App',component: App }},
   {path:'/puzzle',component: Puzzle,name: 'Puzzle'},
   {path:'/puzzle1',component: Puzzle1,name: 'Puzzle1'},
+  {path:'/lattice2048',component: Lattice2048,name: 'Lattice2048'}
 ]
 const router = new VueRouter({
   routes

@@ -2,10 +2,11 @@
   <div>
     <!--<img src="./assets/logo.png">-->
     <div class="nav">
-      <h1>Vue小游戏</h1>
+      <h1 class="title">Vue小游戏</h1>
       <p class="link">导航： 
         <router-link to="/puzzle">拼图</router-link>
         <router-link to="/puzzle1">拼图1</router-link>
+        <router-link to="/Lattice2048">2048</router-link>
       </p>
     </div>
     <router-view></router-view>
@@ -33,6 +34,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: '微软雅黑', Helvetica, Arial, sans-serif;
+}
+.title{
+  font-size: 38px;
 }
 .link{
   margin-top: 10px;
