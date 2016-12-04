@@ -19,14 +19,14 @@ export default {
   components: {
     PuzzleBox
   },
-  watch: {
-    puzzles: {
-      handler (puzzles){
-        this.puzzles = this.puzzles
-      },
-      deep: true
-    }
-  },
+  // watch: {
+  //   puzzles: {
+  //     handler (puzzles){
+  //       this.puzzles = this.puzzles
+  //     },
+  //     deep: true
+  //   }
+  // },
   methods: {
     random(){
       var puzzlearr = []

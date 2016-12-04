@@ -7,6 +7,7 @@
         <router-link to="/puzzle">拼图</router-link>
         <router-link to="/puzzle1">拼图1</router-link>
         <router-link to="/Lattice2048">2048</router-link>
+        <router-link to="/Sokoban">推箱子</router-link>
       </p>
     </div>
     <router-view></router-view>
@@ -15,7 +16,6 @@
 </template>
 
 <script>
-// import Puzzle from './components/Puzzle'
 
 export default {
   name: 'app',

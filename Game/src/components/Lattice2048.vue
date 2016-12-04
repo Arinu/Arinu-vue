@@ -3,10 +3,6 @@
     <h1>2048</h1>
     <p>得分: {{score}}</p>
     <p><button type="button" @click="reset">重新来过</button></p>
-    <button @click="moveTop">上</button>
-    <button @click="moveDown">下</button>
-    <button @click="moveLeft">左</button>
-    <button @click="moveRight">右</button>
     <ul>
       <li
         v-for="item in lattices"
@@ -50,12 +46,6 @@ export default ({
       for(let i=0; i<16;i++){
         latticearr.push('')
       }
-
-      // latticesarr.sort(function(){
-      //   return Math.random() - 0.5
-      // })
-      // latticearr.push('');
-
       latticearr[Math.floor(Math.random()*16)] = this.twoORfour()
       this.lattices = latticearr
       this.score = 0
@@ -230,7 +220,6 @@ li{
   font-size: 48px;
   line-height: 100px;
   vertical-align: middle;
-  /*border: 1px solid #bbb;*/
   border-radius: 5px;
 }
 li[class~=two]{
