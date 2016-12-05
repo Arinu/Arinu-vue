@@ -40,5 +40,6 @@ export default {
 }
 .link{
   margin-top: 10px;
+  font-size: 18px;
 }
 </style>
