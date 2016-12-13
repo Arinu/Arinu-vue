@@ -51,7 +51,6 @@ export default ({
       this.score = 0
     },
     twoORfour(){
-      console.log('随机了一次')
       return Math.random() < 0.8 ? 2 : 4
     },
     random(){
@@ -61,97 +60,60 @@ export default ({
       })
       newarr.length !== 0 && this.lattices.splice(newarr[Math.floor(Math.random()*newarr.length)],1,this.twoORfour())
       newarr.length === 0 && this.gameover()
-      console.log(newarr)
     },
-    moveLeft(){
-      arrFor: for(let i=0; i<16; i++){ //**
-              if(!this.lattices[i]){continue arrFor}
+    move(P,L,O,n,i){
+      //P 表示操作时，格与格之间跨度的值（根据遍历顺序来决定正负）
+      //L 表示操作时，每行/列的尾部的索引值
+      //O 正1或负1，用来转换值的正负
+      Kfor: for(let j=L+O*n; j>0; j--){
+              const k = this.lattices[i+j*P]
+              if(!k){
+                this.lattices.splice(i+j*P,1,this.lattices[i])
+                this.lattices.splice(i,1,'')
+              }else if(k===this.lattices[i]){ //判断是否相等
+                for(let l=1; l<j; l++){ //逆向判断中间是否有值，有则跳过
+                  if(this.lattices[i+l*P]){continue Kfor}
+                }
+                const m = k*2
+                this.score += m
+                this.lattices.splice(i+j*P,1,m)
+                this.lattices.splice(i,1,'')
+              }
+      }
+    },
+    moveLeft(){ //P:-1
+      arrFor: for(let i=0; i<16; i++){ //**正序
               const n = i%4
-              if(n===0){continue arrFor} //**
-              Kfor:for(let j=n; j>0; j--){ //**
-                const k = this.lattices[i-j]  //**从左到右判断 
-                if(!k){
-                  this.lattices.splice(i-j,1,this.lattices[i]) //**
-                  this.lattices.splice(i,1,'')
-                }else if(k===this.lattices[i]){ //判断是否相等
-                  for(let l=1; l<j; l++){ //逆向判断中间是否有值，有则跳过
-                    if(this.lattices[i-l]){continue Kfor} //**
-                  }
-                  const m = k*2
-                  this.score += m
-                  this.lattices.splice(i-j,1,m) //**
-                  this.lattices.splice(i,1,'')
-                }
-              }
-      }
-      this.random()
-    },
-    moveRight(){
-      arrFor: for(let i=15; i>=0; i--){ //**
               if(!this.lattices[i]){continue arrFor}
+              if(n===0){continue arrFor}
+              this.move(-1,0,1,n,i)
+      }
+      this.random()
+    },
+    moveRight(){ //p:1
+      arrFor: for(let i=15; i>=0; i--){ //**倒序
               const n = i%4
-              if(n===3){continue arrFor} //**
-              Kfor:for(let j=3-n; j>0; j--){ //** 从右到左
-                const k = this.lattices[i+j] //**
-                if(!k){
-                  this.lattices.splice(i+j,1,this.lattices[i]) //**
-                  this.lattices.splice(i,1,'')
-                }else if(k===this.lattices[i]){ //判断是否相等
-                  for(let l=1; l<j; l++){ //逆向判断中间是否有值，有则跳过
-                    if(this.lattices[i+l]){continue Kfor} //**
-                  }
-                  const m = k*2
-                  this.score += m
-                  this.lattices.splice(i+j,1,m) //**
-                  this.lattices.splice(i,1,'')
-                }
-              }
+              if(!this.lattices[i]){continue arrFor}
+              if(n===3){continue arrFor}
+              this.move(1,3,-1,n,i)
       }
       this.random()
     },
-    moveTop(){
-      arrFor: for(let i=0; i<16; i++){ //**
-              if(!this.lattices[i]||i<4){continue arrFor}
+    moveTop(){ //p:-4
+      arrFor: for(let i=0; i<16; i++){ //**正序
               const n = Math.floor(i/4)
-              //if(n===0){continue arrFor}
-              Kfor: for(let j=n; j>0; j--){
-                const k = this.lattices[i-j*4]
-                if(!k){
-                  this.lattices.splice(i-j*4,1,this.lattices[i]) //**
-                  this.lattices.splice(i,1,'')
-                }else if(k===this.lattices[i]){ //判断是否相等
-                  for(let l=1; l<j; l++){ //逆向判断中间是否有值，有则跳过
-                    if(this.lattices[i-l*4]){continue Kfor} //**
-                  }
-                  const m = k*2
-                  this.score += m
-                  this.lattices.splice(i-j*4,1,m)
-                  this.lattices.splice(i,1,'')
-                }
-              }
+              if(!this.lattices[i]){continue arrFor}
+              if(n===0){continue arrFor}
+              this.move(-4,0,1,n,i)
       }
       this.random()
     },
-    moveDown(){
-      arrFor: for(let i=15; i>=0; i--){ //**
-              if(!this.lattices[i]||i>11){continue arrFor}
+    moveDown(){ //p:+4
+      arrFor: for(let i=15; i>=0; i--){ //**倒序
               const n = Math.floor(i/4)
-              //if(n===3){continue arrFor} 
-              Kfor:for(let j=3-n; j>0; j--){ //** 从右到左
-                const k = this.lattices[i+j*4] //**
-                if(!k){
-                  this.lattices.splice(i+j*4,1,this.lattices[i]) //**
-                  this.lattices.splice(i,1,'')
-                }else if(k===this.lattices[i]){ //判断是否相等
-                  for(let l=1; l<j; l++){ //逆向判断中间是否有值，有则跳过
-                    if(this.lattices[i+l*4]){continue Kfor} //**
-                  }
-                  const m = k*2
-                  this.score += m
-                  this.lattices.splice(i+j*4,1,m) //**
-                  this.lattices.splice(i,1,'')
-                }
-              }
+              if(!this.lattices[i]){continue arrFor}
+              if(n===3){continue arrFor}
+              this.move(4,3,-1,n,i)
       }
       this.random()
     },
@@ -168,7 +130,6 @@ export default ({
             arr.push(i)
           }
         }
-        console.log(arr);
         arr.length===16 && alert('Game Over');
       }
     }
@@ -176,10 +137,10 @@ export default ({
   created (){
     this.reset();
     document.onkeydown = function(e){
-      e.keyCode===37 && this.moveLeft()
-      e.keyCode===38 && this.moveTop()
-      e.keyCode===39 && this.moveRight()
-      e.keyCode===40 && this.moveDown()
+      e.keyCode===37 && this.moveLeft()//左
+      e.keyCode===39 && this.moveRight()//右
+      e.keyCode===38 && this.moveTop()//上
+      e.keyCode===40 && this.moveDown()//下
     }.bind(this)
   }
 })
