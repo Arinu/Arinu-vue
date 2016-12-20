@@ -1,6 +1,8 @@
 # vue-dke
 
-> A Vue.js project
+> 使用 Vue + Vue-router + Bootstrap + JQuery 构建的单页应用
+
+> 一次加载，多次使用，没有静态页面每次都需要加载资源的弊端
 
 ## Build Setup
 
