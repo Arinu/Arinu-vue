@@ -62,22 +62,22 @@
     methods: {
       to_mbad_bg2 (){
         $('html, body').animate({
-          scrollTop: $('.mbad_bg2').offset().top
+          scrollTop: $('.mbad_bg2').offset().top-100
         },1000)
       },
       to_mbad_bg3 (){
         $('html, body').animate({
-          scrollTop: $('.mbad_bg3').offset().top
+          scrollTop: $('.mbad_bg3').offset().top-100
         },1000)
       },
       to_mbad_bg4 (){
         $('html, body').animate({
-          scrollTop: $('.mbad_bg4').offset().top
+          scrollTop: $('.mbad_bg4').offset().top-100
         },1000)
       },
       to_mbad_bg5 (){
         $('html, body').animate({
-          scrollTop: $('.mbad_bg5').offset().top
+          scrollTop: $('.mbad_bg5').offset().top-100
         },1000)
       }
     }
@@ -91,7 +91,7 @@
     width: 100%;
     height: 320px;
     display: block;
-    background: url(//www.dke.cn/theme/mbad_bg6.jpg) no-repeat center #90BC38;
+    background: url(http://www.dke.cn/theme/mbad_bg6.jpg) no-repeat center #90BC38;
   }
   a.target{
     height: 130px;
@@ -140,25 +140,25 @@
   }
   .mbad_bg2{
     height: 720px;
-    background: url(//www.dke.cn/theme/mbad_bg1.jpg) no-repeat center #90BC38;
+    background: url(http://www.dke.cn/theme/mbad_bg1.jpg) no-repeat center #90BC38;
   }
   .mbad_bg2 .mbad_box{
     margin-top: 200px;
   }
   .mbad_bg3{
-    background: url(//www.dke.cn/theme/mbad_bg3.jpg) no-repeat center #90BC38;
+    background: url(http://www.dke.cn/theme/mbad_bg3.jpg) no-repeat center #90BC38;
   }
   .mbad_bg3 .mbad_box{
     margin-top: 260px;
   }
   .mbad_bg4{
-    background: url(//www.dke.cn/theme/mbad_bg4.png) no-repeat center #90BC38;
+    background: url(http://www.dke.cn/theme/mbad_bg4.png) no-repeat center #90BC38;
   }
   .mbad_bg4 .mbad_box{
     margin-top: 290px;
   }
   .mbad_bg5{
-    background: url(//www.dke.cn/theme/mbad_bg5.jpg) no-repeat center #90BC38;
+    background: url(http://www.dke.cn/theme/mbad_bg5.jpg) no-repeat center #90BC38;
   }
   .mbad_bg5 .mbad_box{
     margin-top: 280px;

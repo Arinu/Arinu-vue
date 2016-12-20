@@ -58,11 +58,11 @@
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="col-md-6 col-sm-6 col-xs-6 ewm">
-              <img class="img-responsive" src="//www.dke.cn/images/ewm_wb.png" alt="">
+              <img class="img-responsive" src="http://www.dke.cn/images/ewm_wb.png" alt="">
               <span class="title">官方微博</span>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6 ewm">
-              <img class="img-responsive" src="//www.dke.cn/images/ewm_wx.png" alt="">
+              <img class="img-responsive" src="http://www.dke.cn/images/ewm_wx.png" alt="">
               <span class="title">官方微信</span>
             </div>
           </div>
@@ -71,7 +71,7 @@
     </div>
     <div class="container-fluid footer_bg2">
       <p class="title">点客传媒国内最专业的移动广告平台</p>
-      <p><span>北京点客网络科技有限公司版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>2016-12-18&nbsp;<a href="//github.com/Arinu">@Arinu</a>重构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>Copyright©2015 DKE All Rights Reserved</span></p>
+      <p><span>北京点客网络科技有限公司版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>2016-12-18&nbsp;<a href="http://github.com/Arinu">@Arinu</a>重构&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>本页面仅供学习研究使用</span></p>
     </div>
   </div>
 </template>

@@ -6,9 +6,9 @@
       <li data-target=".mycarousel" data-slide-to="2"></li>
     </ul>
     <div class="carousel-inner myinner">
-      <div class="item active"><img src="//www.dke.cn/images/home/banner1.jpg" alt=""></div>
-      <div class="item"><img src="//www.dke.cn/images/home/banner2.jpg" alt=""></div>
-      <div class="item"><img src="//www.dke.cn/images/home/banner3.jpg" alt=""></div>
+      <div class="item active"><img src="http://www.dke.cn/images/home/banner1.jpg" alt=""></div>
+      <div class="item"><img src="http://www.dke.cn/images/home/banner2.jpg" alt=""></div>
+      <div class="item"><img src="http://www.dke.cn/images/home/banner3.jpg" alt=""></div>
     </div>
     <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
 			<span class="glyphicon glyphicon-chevron-left"></span>

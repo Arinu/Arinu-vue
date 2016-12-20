@@ -9,7 +9,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="phone" href="mbad.html"></a>
+              <a class="phone" href="http://www.dke.cn/mbad.html"></a>
             </div>
             <p class="title">移动广告</p>
             <p class="info">国内最好的移动广告平台，app推广平台，制定营销方案，汇集媒体资源，效果营销统计，更精准的广告投放，更多样的展现方式。</p>
@@ -18,7 +18,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="game" href="game.html"></a>
+              <a class="game" href="http://www.dke.cn/game.html"></a>
             </div>
             <p class="title">游戏联运</p>
             <p class="info">价值流通，共创共赢，系统化排序，资源排期，营销推广，聚合好产品给用户为好产品引导用户。</p>
@@ -27,7 +27,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="weixin" href="weixin.html"></a>
+              <a class="weixin" href="http://www.dke.cn/weixin.html"></a>
             </div>
             <p class="title">微信推广</p>
             <p class="info">点客传媒微信推广领航者，专业的运营团队，进行针对性用户研究，新颖的互动方式，全方位的服务推广。</p>
@@ -40,7 +40,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="dollar" href="dollar.html"></a>
+              <a class="dollar" href="http://www.dke.cn/dollar.html"></a>
             </div>
             <p class="title">电商金融</p>
             <p class="info">整合智能手机领域最优质的应用及广告资源，一流的手机网站及应用聚合，打造出无线营销的高端俱乐部，帮助客户争赢市场。</p>
@@ -49,7 +49,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="koubei" href="koubei.html"></a>
+              <a class="koubei" href="http://www.dke.cn/koubei.html"></a>
             </div>
             <p class="title">口碑营销</p>
             <p class="info">目标用户细化，行业最专业的口碑营销团队,丰富的口碑营销经验。引爆资源热点，对品牌和产品的信息内容整合进行营销。</p>
@@ -58,7 +58,7 @@
         <div class="col-md-4 col-sm-4">
           <div class="home_box1">
             <div class="photo">
-              <a class="anli" href="anli.html"></a>
+              <a class="anli" href="http://www.dke.cn/anli.html"></a>
             </div>
             <p class="title">案例精选</p>
             <p class="info">通过合作促进产品销量，传递品牌价值给目标客群，新技术的应用吸引用户关注品牌，深度营销目标用户。</p>
@@ -96,8 +96,8 @@
           </div>
           <div class="col-md-5 col-sm-12 col-xs-12">
             <div class="home_box2_right">
-              <img class="video_title img-responsive" src="//www.dke.cn/images/video_title.png" alt="">
-              <img class="video_info img-responsive" src="//www.dke.cn/images/video.png" alt="">
+              <img class="video_title img-responsive" src="http://www.dke.cn/images/video_title.png" alt="">
+              <img class="video_info img-responsive" src="http://www.dke.cn/images/video.png" alt="">
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@
 </script>
 <style scoped>
   .home_bg1{
-    background: url(//www.dke.cn/theme/home_1.png) center center no-repeat;
+    background: url(http://www.dke.cn/theme/home_1.png) center center no-repeat;
     height: 120px;
   }
   .home_tab1 .home_box1{

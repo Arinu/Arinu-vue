@@ -13,7 +13,7 @@
       </div>
       <div class="collapse navbar-collapse">
         <div class="nav navbar-nav navbar-right">
-          <li :class="{active: $route.path===item.href ? true : false}" v-for="item in navbar_nav"><a :href="'#' + item.href">{{item.text}}</a></li>
+          <li :class="{active: isactive(item)}" v-for="item in navbar_nav"><a :href="'#' + item.href">{{item.text}}</a></li>
         </div>
       </div>
     </div>
@@ -28,15 +28,32 @@
           {href: '/', text: '首页'},
           {href: '/mbad', text: '移动广告'},
           {href: '/game', text: '游戏联运'},
-          {href: '/weixin', text: '微信推广'},
+          {href: '/wx', text: '微信推广'},
           {href: '/online', text: '电商金融'},
-          {href: '/koubei', text: '口碑营销'},
-          {href: '/news', text: '新闻动态'},
+          {href: '/reputation', text: '口碑营销'},
+          {href: '/news/info', text: '新闻动态'},
           {href: '/about', text: '关于我们'},
         ]
       }
     },
-    mounted (){
+    methods: {
+      isactive (item){
+        if(item.href.length===1 && this.$route.path===item.href){
+          return true;
+        }
+        if(this.$route.path!==1 && item.href.length!==1 && this.$route.path.indexOf(item.href.slice(0,3))>-1){
+          return true;
+        }
+        return false
+      }
+    },
+    watch: {
+      $route: {
+        handler(data){
+          //  console.log(data)
+        },
+        deep: true
+      }
     }
   }
 </script>

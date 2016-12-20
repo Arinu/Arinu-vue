@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
-    <router-view class="view"></router-view>
+    <router-view class="view"><div>User {{ $route.params.id }}</div></router-view>
     <Footnote></Footnote>
   </div>
 </template>

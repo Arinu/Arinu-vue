@@ -5,30 +5,30 @@
       <div class="row">
         <div class="col-md-4 col-sm-4">
           <div class="logo">
-            <img class="img-responsive" src="//www.dke.cn/images/6yx.jpg" alt="">
+            <img class="img-responsive" src="http://www.dke.cn/images/6yx.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-3 game_box1">
           <div class="photo">
-            <img class="img-responsive" src="//www.dke.cn/images/6yx_1.png" alt="">
+            <img class="img-responsive" src="http://www.dke.cn/images/6yx_1.png" alt="">
           </div>
           <p>资源丰富</p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-3 game_box1">
           <div class="photo">
-            <img class="img-responsive" src="//www.dke.cn/images/6yx_2.png" alt="">
+            <img class="img-responsive" src="http://www.dke.cn/images/6yx_2.png" alt="">
           </div>
           <p>技术专业</p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-3 game_box1">
           <div class="photo">
-            <img class="img-responsive" src="//www.dke.cn/images/6yx_3.png" alt="">
+            <img class="img-responsive" src="http://www.dke.cn/images/6yx_3.png" alt="">
           </div>
           <p>海量优质</p>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-3 game_box1">
           <div class="photo">
-            <img class="img-responsive" src="//www.dke.cn/images/6yx_4.png" alt="">
+            <img class="img-responsive" src="http://www.dke.cn/images/6yx_4.png" alt="">
           </div>
           <p>全网覆盖</p>
         </div>
@@ -120,7 +120,7 @@
 </script>
 <style>
   .game_bg1{
-    background: url(//www.dke.cn/theme/game_bg1.png) no-repeat center center #e9eff3;
+    background: url(http://www.dke.cn/theme/game_bg1.png) no-repeat center center #e9eff3;
     height: 320px;
   }
   .game_tab1{
@@ -154,7 +154,7 @@
   .game_bg2 div.title{
     height: 58px;
     margin-bottom: 50px;
-    background: url(//www.dke.cn/images/game_promotion.png) no-repeat center center #e9eff3;
+    background: url(http://www.dke.cn/images/game_promotion.png) no-repeat center center #e9eff3;
   }
   .game_bg2 p.info{
     color: #696969;
@@ -162,7 +162,7 @@
   }
   .game_bg2 div.photo{
     height: 200px;
-    background: url(//www.dke.cn/images/game_bg3_1.png) no-repeat center center #e9eff3;
+    background: url(http://www.dke.cn/images/game_bg3_1.png) no-repeat center center #e9eff3;
   }
   .game_tab2{
     padding-top: 50px;
@@ -171,7 +171,7 @@
   .game_tab2 div.title{
     height: 58px;
     margin-bottom: 50px;
-    background: url(//www.dke.cn/images/game_bg4_1.png) no-repeat center center #fff;
+    background: url(http://www.dke.cn/images/game_bg4_1.png) no-repeat center center #fff;
   }
   .game_tab2 p.title{
     color: #53B830;

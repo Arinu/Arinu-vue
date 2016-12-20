@@ -3,17 +3,32 @@ import App from './App'
 import VueRouter from 'vue-router'
 import Mbad from './components/Mbad'
 import Game from './components/Game'
-import Weixin from './components/Weixin'
+import Wx from './components/Wx'
 import Index from './components/Index'
 import Online from './components/Online'
+import Reputation from './components/Reputation'
+import News from './components/News'
+import Info from './components/news/Info'
+import Notice from './components/news/Notice'
+import Analysis from './components/news/Analysis'
+import About from './components/About'
+
 /* eslint-disable no-new */
 Vue.use(VueRouter)
 const routes = [
-  {path:'/',component: Index, name: '主页'},
-  {path:'/mbad',component: Mbad, name: '移动广告'},
-  {path:'/game',component: Game, name: '游戏联运'},
-  {path:'/Weixin',component: Weixin, name: '微信推广'},
-  {path:'/Online',component: Online, name: '电商金融'}
+  {path:'/',component: Index },
+  {path:'/mbad',component: Mbad },
+  {path:'/game',component: Game },
+  {path:'/wx',component: Wx },
+  {path:'/online',component: Online },
+  {path:'/reputation',component: Reputation },
+  {path:'/about',component: About },
+  {path:'/:id',component: News, 
+   children: [
+     {path:'info',component: Info },
+     {path:'notice',component: Notice },
+     {path:'analysis',component: Analysis }
+   ]}
 ]
 const router = new VueRouter({
   routes

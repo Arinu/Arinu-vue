@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container-fluid weixin_bg1"></div>
-    <div class="container weixin_tab1">
+    <div class="container-fluid wx_bg1"></div>
+    <div class="container wx_tab1">
       <div class="title"></div>
       <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-6">
@@ -26,12 +26,12 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid weixin_bg2">
+    <div class="container-fluid wx_bg2">
       <p class="title">重构移动互联商业连接</p>
       <p class="title">最精准的微信移动互联推广解决方案</p>
       <button type="button" class="btn">立即开启</button>
     </div>
-    <div class="container weixin_tab2">
+    <div class="container wx_tab2">
       <p class="title">他们都在这里...</p>
       <div class="photo">
         <a><img src="http://www.dke.cn/images/weixin/1.jpg"></a>
@@ -62,41 +62,41 @@
 <script>
 </script>
 <style scoped>
-  .weixin_bg1{
+  .wx_bg1{
     height: 320px;
     background: url(http://www.dke.cn/theme/weixin_bg1.png) no-repeat center center #e9eff3;
   }
-  .weixin_tab1{
+  .wx_tab1{
     padding-bottom: 20px;
   }
-  .weixin_tab1 div.title{
+  .wx_tab1 div.title{
     height: 120px;
     background: url(http://www.dke.cn/theme/weixin_bg2.png) no-repeat center center #fff;
   }
-  .weixin_tab1 img.img-responsive{
+  .wx_tab1 img.img-responsive{
     margin: 10px auto;
   }
-  .weixin_tab1 p.title{
+  .wx_tab1 p.title{
     font-size: 22px;
     text-align: center;
     color: #696969;
   }
-  .weixin_tab1 p.info{
+  .wx_tab1 p.info{
     padding: 10px 20px;
     color: #999999;
     line-height: 1.7;
   }
-  .weixin_bg2{
+  .wx_bg2{
     height: 320px;
     padding-top: 50px;
     text-align: center;
     background: url(http://www.dke.cn/theme/weixin_bg3.png) no-repeat center center #000;
   }
-  .weixin_bg2 p.title{
+  .wx_bg2 p.title{
     color: #fff;
     font-size: 28px;
   }
-  .weixin_bg2 button{
+  .wx_bg2 button{
     color: #bbb;
     padding: 10px 30px;;
     font-size: 22px;
@@ -105,28 +105,28 @@
     border-radius: 6px;
     background-color: transparent;
   }
-  .weixin_tab2{
+  .wx_tab2{
     padding: 50px;
     min-width: 560px;
   }
-  .weixin_tab2 p.title{
+  .wx_tab2 p.title{
     font-size: 36px;
     text-align: center;
   }
-  .weixin_tab2 div.photo{
+  .wx_tab2 div.photo{
     margin-top: 40px;
     padding-left: 40px;
   }
-  .weixin_tab2 div.photo a{
+  .wx_tab2 div.photo a{
     display: inline-block;
     padding: 10px 20px;
   }
-  .weixin_tab2 div.photo a img{
+  .wx_tab2 div.photo a img{
     width: 100px;
     height: 100px;
   }
   @media (min-width: 768px){
-    .weixin_bg2 p.title{
+    .wx_bg2 p.title{
       font-size: 36px;
     }
   }

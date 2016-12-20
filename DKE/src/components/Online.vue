@@ -59,7 +59,6 @@
 </template>
 <script>
   export default {
-    name: 'online',
     data (){
       return {
         VesHeight: undefined,
@@ -78,23 +77,30 @@
           return false;
         }
       })
-      $(window).resize(this.resize);
+      $(window).on('resize',this.resize)
+    },
+    beforeDestroy (){
+      $(document).off('mousewheel DOMMouseScroll',this.wheel)
+      $(document).off('keydown',false)
+      $(window).off('resize',this.resize)
+      $('html,body').css({'height': '','overflow': ''})
     },
     methods: {
       wheel (e){
+        console.log(66)
         //WebKit内核，Trident内核 => mousewheel
         //Gecko内核 => DOMMouseScroll
-        e.preventDefault();
+        // e.preventDefault();
         var value = e.originalEvent.wheelDelta || -e.originalEvent.detail;
         //e.originalEvent.wheelDelta => 120(up) or -120(down) 谷歌IE内核
         //e.originalEvent.detail => -3(up) or 3(down) 火狐内核
         var delta = Math.max(-1, Math.min(1, value));
-        console.log(delta < 0 ? 'down' : 'up');
+        // console.log(delta < 0 ? 'down' : 'up');
         delta < 0 ? this.next() : this.prev();
       },
       prev (){
         if (this.scroll){return false};
-        this.scroll = true;
+        this.scroll = true; 
         setTimeout(function(){
           this.scroll = false;
         }.bind(this),800)
@@ -136,9 +142,6 @@
     -o-transition: all .6s ease;
     -ms-transition: all .6s ease;
     -webkit-transition: all .6s ease;
-  }
-  .online_bg1 .bg_link{
-
   }
   .online_bg1 a.on{
     display: block;
