@@ -161,6 +161,9 @@ button{
   border: 1px solid #456db3;
   border-radius: 3px;
 }
+p{
+  font-weight: 700;
+}
 ul{
   width: 500px;
   height: 500px;

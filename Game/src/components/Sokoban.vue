@@ -190,4 +190,8 @@
     background-color: #1d62da;
     border: 2px solid #dcdcdc;
   }
+  button{
+    padding: 5px 10px;
+    font-weight: 700;
+  }
 </style>
