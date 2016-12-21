@@ -2,12 +2,10 @@
   <nav class="navbar navbar-blue navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navber-brand" href="#/"><img src="//www.dke.cn/theme/logo.png" alt=""></a>
+        <a class="navber-brand" href="#/"><img src="http://www.dke.cn/theme/logo.png" alt=""></a>
         
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span v-for="index in 3" class="icon-bar"></span>
         </button>
         
       </div>
